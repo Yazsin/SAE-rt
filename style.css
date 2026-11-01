@@ -1,0 +1,217 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#CAA2A2, #F0DEDE);
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+header {
+  width: 100%;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+}
+
+
+#info {
+  background-color: #CAA2A2;
+  padding: 15px 25px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+#info p {
+  margin: 5px 0;
+}
+
+
+#info2 {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#info2 p {
+  margin: 0;
+}
+
+
+aside {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  justify-self: end;
+}
+
+figure {
+  margin: 0;
+}
+
+.pp {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+#corps {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  width: 100%;
+}
+
+
+#gauche {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+#droite {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+.STI2D {
+  font-size: 0.9em;
+  opacity: 0.8;
+  display: block;
+}
+
+
+#info:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+ 
+}
+
+
+  #formations a:hover
+  {
+    color : white;
+    transform: scale(1.1);
+  }
+  #formations a{
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+#expérience a:hover{
+  color : white;
+  transform: scale(1.1);
+}
+#expérience a 
+{
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+
+
+
+
+
+#bouton {
+  margin-left: 50vw;
+  width: fit-content;
+  background-color: #D9D9D9;
+  padding: 10px;
+  border-radius: 10px;
+  border: gray 10px;
+}
+#bouton:hover{
+  background-color: whitesmoke;
+}
+
+#partie_cachee {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+}
+a:hover
+{
+  color: white;
+}
+h2
+{
+  color: black;
+}
+
+
+/** CSS page expériences ***/
+
+.entreprises
+{
+  display: flex;
+  justify-content: center;
+
+}
+h4
+{
+  margin-right: 20vw;
+  margin-left: 20vw;
+}
+
+/** CSS page formation ***/
+
+.table-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table td, table th {
+  text-align: center;
+}
+
+/** FOOTER   ***/
+footer {
+  background-color: #D9D9D9;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 10px;
+}
